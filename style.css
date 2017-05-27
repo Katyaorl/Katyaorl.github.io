@@ -392,6 +392,8 @@ visibility: visible;
 }
 .services_colRight{
 	margin-top: 90px;
+	max-width: 100%;
+	overflow: hidden;
 }
 .services_colRight img{
 	width: 100%;
@@ -733,6 +735,10 @@ visibility: visible;
 .p-tab__nav .nav-item__link.active{
 	color: #5495e0;
 	border-color:#5495e0;
+}
+.ourMission__colRight{
+	max-width: 100%;
+	overflow: hidden;
 }
 .ourMission__title{
 	margin-top: 95px
