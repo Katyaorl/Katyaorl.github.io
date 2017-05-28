@@ -22,7 +22,7 @@ a.button_black:hover{
 	color: #fff
 }
 a.button_blue:hover{
-	color: #fff
+	color: #fff;
 }
 button, .btn, .subtitle,
 .button{
@@ -79,6 +79,8 @@ button, .btn, .subtitle,
 }
 button, 
 .button{
+	display: inline-block;
+	position: relative;
 	font-size: 13px;
 	padding: 15px 25px;
 	line-height: 1;
@@ -87,13 +89,33 @@ button,
 	cursor: pointer;
 	text-transform: uppercase;
 	text-decoration: none;
+	overflow: hidden;
+	-webkit-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+   transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+button:hover, 
+.button:hover{
+	letter-spacing: 1px
 }
 a.button{
 	text-decoration: none;
 }
 .button_blue{
 	background-color: #14c3dc;
-	color: #fff
+	color: #fff;
+}
+.button_blue:hover{
+	background-color: #07aec5;
+}
+.button_blue:hover,
+.button_black:hover{
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+}
+.button_white:hover{
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(20, 195, 220, 0.5);
+}
+.button_black:hover{
+	background-color: #292b2c
 }
 .button_black{
 	background-color: #000;
@@ -103,7 +125,8 @@ a.button{
 	background-color: #fff;
 	color: #000
 }
-	.animateIt{
+
+.animateIt{
 	visibility: hidden;
 }
 .animateIt.animated{
@@ -726,7 +749,12 @@ visibility: visible;
 	color: #999999;
 	text-align: center;
 	font-size: 18px;
-
+}
+.nav-item__link{
+	transition: .3s ease
+}
+.nav-item__link:hover{
+	transform: scale(1.2);
 }
 .nav-item__link p{
 	margin: 0;
